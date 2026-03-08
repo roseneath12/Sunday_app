@@ -1,11 +1,9 @@
-import { Image } from 'expo-image';
-import { StyleSheet } from 'react-native';
-
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
+import { Image } from 'expo-image';
+import { StyleSheet, TextInput } from 'react-native';
 
 export default function HomeScreen() {
   const day = new Date().toLocaleDateString('en-GB', { weekday: 'long' });
@@ -20,49 +18,39 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Today is {day} !</ThemedText>
+        <ThemedText type="title">It is {day} !</ThemedText>
         <HelloWave />
       </ThemedView>
       
       <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
-
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
+        <ThemedText type="normal">Take a moment to breathe and think about your day. 🌿 </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
+        <ThemedText type="normal">Write three things that made you smile or feel good. ✏️</ThemedText>
       </ThemedView>
-    </ParallaxScrollView>
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Thank you for: </ThemedText>
+      </ThemedView>
+      
+
+  <TextInput
+    style={styles.inputBox}
+    placeholder="1. Something that felt good..."
+    placeholderTextColor="#999"
+  />
+
+  <TextInput
+    style={styles.inputBox}
+    placeholder="2. Another positive moment..."
+    placeholderTextColor="#999"
+  />
+
+<TextInput
+  style={styles.inputBox}
+  placeholder="3. One more thing that made you smile..."
+  placeholderTextColor="#999"
+/>
+  </ParallaxScrollView>
   );
 }
 
@@ -82,5 +70,16 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     position: 'absolute',
+  },
+  inputSection: {
+    gap: 10,
+    marginTop: 10,
+  },
+  inputBox: {
+    borderWidth: 1,
+    borderColor: '#ff2891',
+    borderRadius: 8,
+    padding: 12,
+    fontSize: 16,
   },
 });
