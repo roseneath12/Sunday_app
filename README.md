@@ -50,3 +50,5 @@ The app guides you through three small gratitude prompts and stores your reflect
 ---
 
 STILL UNDER CONSTRUCTION
+
+                ### By Inma Ruiz 
