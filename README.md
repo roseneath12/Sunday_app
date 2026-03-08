@@ -1,4 +1,4 @@
-# 🌿 thank_app — A gentle daily gratitude journal
+# 🌿 Sunday-app — A gentle daily gratitude journal
 
 A simple, calming mobile app built with Expo and React Native to help you pause, breathe, and reflect on the good moments in your day.
 
@@ -49,5 +49,4 @@ The app guides you through three small gratitude prompts and stores your reflect
 
 ---
 
-
-
+STILL UNDER CONSTRUCTION
