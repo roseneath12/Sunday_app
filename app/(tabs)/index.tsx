@@ -23,13 +23,13 @@ export default function HomeScreen() {
       </ThemedView>
       
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="normal">Take a moment to breathe and think about your day. 🌿 </ThemedText>
+        <ThemedText type="default">Take a moment to breathe and think about your day. 🌿 </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="normal">Write three things that made you smile or feel good. ✏️</ThemedText>
+        <ThemedText type="default">Write three things that made you smile or feel good today. ✏️</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Thank you for: </ThemedText>
+        <ThemedText type="subtitle">I am grateful for: </ThemedText>
       </ThemedView>
       
 
