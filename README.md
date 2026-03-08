@@ -1,50 +1,57 @@
-# Welcome to your Expo app 👋
+# 🌿 thank_app — A gentle daily gratitude journal
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple, calming mobile app built with **Expo** and **React Native** to help you pause, breathe, and reflect on the good moments in your day.
 
-## Get started
+The app guides you through three small gratitude prompts and stores your reflections so you can revisit them anytime.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+- **Daily gratitude prompts**  
+  A gentle space to write three things that made you smile today.
 
-   ```bash
-   npx expo start
-   ```
+- **Automatic date tracking**  
+  Entries are saved with the current date — no extra steps needed.
 
-In the output, you'll find options to open the app in a
+- **History view**  
+  Browse past reflections and see how your gratitude grows over time.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Clean, expressive UI**  
+  Soft colours, warm emojis, and a simple layout designed to feel calm and inviting.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Local storage**  
+  All entries are saved securely on your device using AsyncStorage.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📱 Screens
+
+### **Home**
+- Shows the current day  
+- Offers a short grounding message  
+- Lets you write three gratitude entries  
+- Saves them with one tap
+
+### **History**
+- Displays all saved entries grouped by date  
+- Lets you revisit your positive moments anytime
+
+---
+
+## 🛠️ Tech Stack
+
+- **Expo**
+- **React Native**
+- **TypeScript**
+- **AsyncStorage** for local data persistence
+- **Expo Router** for navigation
+
+---
+
+## 🚀 Getting Started
+
+Install dependencies:
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npm install
